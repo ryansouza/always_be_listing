@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# vim: set filetype=sh :
+# vim: filetype=sh
 
 PROJECT_ROOT="`dirname $BASH_SOURCE`/../"
 

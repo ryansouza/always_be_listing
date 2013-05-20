@@ -10,3 +10,7 @@ gem 'coffee-rails', '~> 4.0.0' # Use SCSS for stylesheets
 gem 'jquery-rails' # Use jquery as the JavaScript library
 
 gem 'puma'
+
+group :development, :test do
+  gem "minitest-rails"
+end
