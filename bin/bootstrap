@@ -7,3 +7,8 @@ PROJECT_ROOT="`dirname $BASH_SOURCE`/../"
 echo "Setting up configs"
 
 eval "cat <<< \"$(<$PROJECT_ROOT/.powenv.template)\"" 2> /dev/null >$PROJECT_ROOT/.powenv
+
+cp $PROJECT_ROOT/config/database.yml{.example,}
+
+bundle install
+bundle exec rake db:drop db:create db:migrate
