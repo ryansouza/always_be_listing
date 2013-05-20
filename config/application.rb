@@ -21,6 +21,7 @@ module AlwaysBeLists
     # config.i18n.default_locale = :de
 
     config.generators do |g|
+      g.template_engine :haml
       g.test_framework :mini_test, :spec => true, :fixture => false
     end
   end
