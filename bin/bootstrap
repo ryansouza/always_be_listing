@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# vim: set filetype=sh :
+
+PROJECT_ROOT="`dirname $BASH_SOURCE`/../"
+
+echo "Setting up configs"
+
+eval "cat <<< \"$(<$PROJECT_ROOT/.powenv.template)\"" 2> /dev/null >$PROJECT_ROOT/.powenv
