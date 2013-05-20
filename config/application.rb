@@ -23,6 +23,9 @@ module AlwaysBeLists
     config.generators do |g|
       g.template_engine :haml
       g.test_framework :mini_test, :spec => true, :fixture => false
+      g.javascripts false
+      g.stylesheets false
+      g.helper false
     end
   end
 end
