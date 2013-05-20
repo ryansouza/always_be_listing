@@ -15,5 +15,5 @@
 /log/*.log
 /tmp
 
-/.powenv
+/.env
 /config/database.yml

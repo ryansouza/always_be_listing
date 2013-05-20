@@ -6,7 +6,7 @@ PROJECT_ROOT="`dirname $BASH_SOURCE`/../"
 
 echo "Setting up configs"
 
-eval "cat <<< \"$(<$PROJECT_ROOT/.powenv.template)\"" 2> /dev/null >$PROJECT_ROOT/.powenv
+eval "cat <<< \"$(<$PROJECT_ROOT/.env.template)\"" 2> /dev/null >$PROJECT_ROOT/.env
 
 cp $PROJECT_ROOT/config/database.yml{.example,}
 
